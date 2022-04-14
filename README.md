@@ -7,7 +7,7 @@
 Repository created to post my projects / my evolution with Node.JS
 
 # Technology used
-- Node.JS
+![Node.JS](https://img.shields.io/badge/-Node.JS-0D1117?style=for-the-badge&logo=node.js&labelColor=0D1117&textColor=0D1117)&nbsp;
 
 # Author
 Matheus Maia Alvarez
