@@ -18,6 +18,7 @@
 O respositório "NodeJS" foi criado para registrar minha evolução em NodeJS.
 
 O repositório consiste em várias pastas, cada pasta possui uma atividade diferente.
+
 ---
 
 ## ⚙️ Funcionalidades
@@ -25,22 +26,24 @@ O repositório consiste em várias pastas, cada pasta possui uma atividade difer
 - [x] Registra meu conhecimento em Node
 - [x] Registra minha evolução em Node
 - [x] Registra um projeto um Node
+
 ---
 
 ## 🚀 Como visualizar o repositório
 
-💡 É possível visualizar o repositório aqui mesmo no GitHub, mas para uma melhor visualização, recomendo baixar um editor de código como o [VSCode](https://code.visualstudio.com/)
+É possível visualizar o repositório aqui mesmo no GitHub, mas para uma melhor visualização, recomendo baixar um editor de código como o [VSCode](https://code.visualstudio.com/)
+
 ---
 
 ## 🛠 Tecnologias
 
 As seguintes ferramentas foram usadas na construção do repositório:
 
-#### ([NodeJS](https://nodejs.org)
+#### [NodeJS](https://nodejs.org)
 
-#### ([MongoDB](www.mongodb.com)
+#### [MongoDB](www.mongodb.com)
 
-#### ([Handlebars](https://handlebarsjs.com)
+#### [Handlebars](https://handlebarsjs.com)
 
 ---
 
