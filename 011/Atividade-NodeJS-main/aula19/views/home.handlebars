@@ -1,0 +1,17 @@
+<h1>Lista de Filmes:</h1>
+
+<a href="/cad"><button>Adicionar Filme</button></a>
+
+<hr>
+
+{{#each posts}}
+    <small>Data: {{createdAt}}</small>
+    <h1>{{titulo}}</h1>
+    <p><b>Descrição: </b>{{Conteudo}}</p>
+    <a href="/alt/{{id}}"><button>Alterar</button></a>
+    <a href="/deletar/{{id}}"><button>Deletar</button></a>
+    <hr>
+{{/each}}
+
+<a href="/adm"><button>Retornar ao menu</button></a>
+
