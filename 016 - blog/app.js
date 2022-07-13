@@ -1,0 +1,50 @@
+// Carregando Módulos
+const express = require("express") // Const criada para pegar o valor do express
+const handlebars = require("express-handlebars") // const criada para pegar o hadlebars
+const bodyParser = require("body-parser"); // Const criada para pegar o body parser
+const app = express(); // Const criada para pegar o express
+const port = 8081; // Const criada para definir a porta
+const admin = require("./routes/admin") // Essa const está pegando o modlu exportado do arquivo admin
+const path = require("path") // Serve para trabalhar com diretórios (pastas)
+//const Mongoose = require("mongoose")
+
+// ---------------- Configurações ----------------
+
+    // Body Parser
+    app.use(express.urlencoded({extended: true}));
+    app.use(express.json());
+
+    //Handlebars
+    app.engine('handlebars', handlebars.engine({
+        defaultLayout: 'main',
+        runtimeOptions: {
+            allowProtoPropertiesByDefault: true,
+    
+            allowProtoMethodsByDefault: true,
+        }
+    }));
+    app.set('view engine', 'handlebars');
+
+    // Mongoose
+
+    // Public
+    app.use(express.static(path.join(__dirname, "public"))) // Estamos falando parar o express que a pasta que está guardando todos os nossos arquivos staticos é a pasta public
+
+// ---------------- Rotas ----------------
+    // Criamos um prefixo "/admin" para acessar as rotas, 
+    // precisamos colocar o prefixo antes da rota
+    app.use("/admin", admin)
+
+    // Rota sem prefixo
+    app.get("/", (req, res) =>{
+        res.send("Rota principal")
+    })
+
+    app.get("/posts", (req, res) =>{
+        res.send("Lista de Posts")
+    })
+
+// ---------------- Outros ----------------
+app.listen(port, () =>{
+    console.log("Servidor rodando!!")
+})
